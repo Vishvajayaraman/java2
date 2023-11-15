@@ -1,0 +1,25 @@
+import java.util.ArrayList;
+
+public class Student {
+    private int studentID;
+    private String name;
+    private String dateOfBirth;
+    private String address;
+    private String phoneNumber;
+    private String emailAddress;
+    private ArrayList<String> coursesEnrolled;
+    private double gpa;
+    private String status;
+    public Student(int studentID, String name, String dateOfBirth, String address,
+                   String phoneNumber, String emailAddress) {
+        this.studentID = studentID;
+        this.name = name;
+        this.dateOfBirth = dateOfBirth;
+        this.address = address;
+        this.phoneNumber = phoneNumber;
+        this.emailAddress = emailAddress;
+        this.coursesEnrolled = new ArrayList<>();
+        this.gpa = 0.0; // Initialize GPA
+        this.status = "Active"; // Default status
+    }
+}
